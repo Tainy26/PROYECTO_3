@@ -1,0 +1,241 @@
+aside {
+  grid-area: 1 / 1 / 6 / 2;
+  border-right: 1.1px solid #ccc;
+  color: white;
+  display: flex;
+  align-items: center;
+  writing-mode: vertical-rl;
+  text-align: center;
+  z-index: 9999;
+  }
+
+.container a{
+  position: relative;
+  left: 25px;
+  width: 60px;
+}
+.container ul {
+  position: fixed;
+  left: 5px;
+  display: flex;
+  align-items: center;
+  width: 60px;
+  height: 90vh;
+  list-style: none;
+  gap: 35.5px;
+  padding-top: 25px;
+}
+.container li{
+  position: relative;
+  left: 0px;
+  width:45px;
+  z-index: auto;
+}
+.container img {
+  position: relative;
+  right: 28px;
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  margin: 7px;
+}
+
+.container li:hover {
+  background-color: #f3f2eb;
+  border-radius: 10px;
+}
+
+.setting-icon {
+  display: flex;
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 40px;
+  height: 10vh;
+  padding-top: 300px;
+}
+
+.setting-icon a{
+  position: relative;
+  left: 0px;
+  width: 45px;
+  height: 38px;
+}
+
+.setting-icon img{
+  position: relative;
+  right: 3.5px;
+}
+
+.setting-icon a:hover {
+  background-color: #f3f2eb;
+  border-radius: 10px;
+}
+
+.messenger-revert {
+  transform: scaleX(-1);
+}
+
+
+.tooltip, .tooltip1, .tooltip2 {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  writing-mode: initial;
+  direction: ltr;
+  width: 52px;
+  height: 35px;
+  background-color: black;
+  color: #fff;
+  border-radius: 9px;
+  padding: 4px 8px;
+  font-size: 12.5px;
+  font-weight: 100;
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 12px;
+  opacity: 0;
+  z-index: 9999;
+}
+
+.tooltip:hover .tooltip-text, .tooltip1:hover .tooltip-text1, .tooltip2:hover .tooltip-text2  {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-text1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  writing-mode: initial;
+  direction: ltr;
+  width: 75px;
+  height: 35px;
+  background-color: black;
+  color: #fff;
+  border-radius: 9px;
+  padding: 4px 8px;
+  font-size: 12.5px;
+  font-weight: 100;
+  position: absolute;
+  left: 43px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: -1px;
+  opacity: 0;
+  z-index: 9999;
+}
+
+.tooltip-text2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  writing-mode: initial;
+  direction: ltr;
+  width: 95px;
+  height: 35px;
+  background-color: black;
+  color: #fff;
+  border-radius: 9px;
+  padding: 4px 8px;
+  font-size: 12.5px;
+  font-weight: 100;
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 12px;
+  opacity: 0;
+  z-index: 9999;
+}
+
+.tooltip3 {
+  padding: 1px;
+  position: relative;
+  z-index: 9999;
+}
+
+.web-browser-container {
+  writing-mode: initial;
+  width: 210px;
+  height: 520px;
+  position: absolute;
+  left:52px;
+  top: 100px;
+  transform: translateY(-50%);
+  background-color: white;
+  padding:10px;
+  border-radius: 15px;
+  box-shadow: 0 5px 8px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 1000;
+}
+
+.web-browser-container ul {
+  display: flex;
+  flex-direction: column;
+  width: 185px;
+  height: auto;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1px;
+}
+
+.web-browser-container li{
+  display: flex;
+  position: relative;
+  left: 7px;
+  top: 5px;
+  align-items: center;
+  height: 40px;
+  width: 180px;
+  border-radius: 15px;
+}
+
+.web-browser-container a{
+  display: flex;
+  position: relative;
+  width: 150px;
+  left: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.web-browser-container ul li {
+  cursor: pointer;
+  line-height: 1;
+}
+
+.web-browser-container ul li:hover {
+  background-color: #efefed;
+}
+
+.tooltip3:hover .web-browser-container {
+  display: block;
+}
+
+
+.tooltip-text,
+.tooltip-text1,
+.tooltip-text2 {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.tooltip:hover .tooltip-text,
+.tooltip1:hover .tooltip-text1,
+.tooltip2:hover .tooltip-text2 {
+  visibility: visible;
+  opacity: 1;
+}

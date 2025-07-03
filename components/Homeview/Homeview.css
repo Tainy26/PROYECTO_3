@@ -1,0 +1,14 @@
+.parent {
+  display: grid;
+  grid-template-columns: 70px repeat(1, 1fr);
+  grid-template-rows: 70px repeat(1, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  height: 100vh;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}

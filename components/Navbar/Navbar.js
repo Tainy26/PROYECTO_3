@@ -7,7 +7,9 @@ export const Navbar = () => `
         <img src="/icons/search.png" class="search-icon" alt="Lupa" />
         <input type="search" class="search-input" placeholder="Search" />
       </form>
-      <a href="#"><img src="/icons/profile.jpg" alt="Profile" /></a>
+      <a href="#" id="profile-link">
+      <img src="/icons/profile.jpg" alt="Profile" />
+      </a>
       <div class="custom-dropdown">
             <img src="/icons/down-arrow.png" class="dropdown-icon" alt="Desplegar" />
             <div class="dropdown-menu">

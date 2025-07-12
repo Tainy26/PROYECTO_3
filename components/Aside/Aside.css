@@ -8,7 +8,6 @@ aside {
   text-align: center;
   z-index: 9999;
   }
-
 .container a{
   position: relative;
   left: 25px;
@@ -39,51 +38,41 @@ aside {
   object-fit: cover;
   margin: 7px;
 }
-
 .container li:hover {
   background-color: #f3f2eb;
   border-radius: 10px;
 }
-
 .setting-icon {
-  display: flex;
   position: relative;
-  display: flex;
-  align-items: center;
+  top: 290px;
   align-content: center;
-  justify-content: center;
   width: 40px;
-  height: 10vh;
-  padding-top: 300px;
+  height: auto;
+  z-index: 9999;
 }
-
 .setting-icon a{
-  position: relative;
+  position: absolute;
   left: 0px;
   width: 45px;
   height: 38px;
 }
-
 .setting-icon img{
   position: relative;
   right: 3.5px;
+  cursor: pointer;
 }
-
 .setting-icon a:hover {
   background-color: #f3f2eb;
   border-radius: 10px;
 }
-
 .messenger-revert {
   transform: scaleX(-1);
 }
-
 
 .tooltip, .tooltip1, .tooltip2 {
   position: relative;
   display: inline-block;
 }
-
 .tooltip-text {
   display: flex;
   align-items: center;
@@ -106,12 +95,10 @@ aside {
   opacity: 0;
   z-index: 9999;
 }
-
 .tooltip:hover .tooltip-text, .tooltip1:hover .tooltip-text1, .tooltip2:hover .tooltip-text2  {
   visibility: visible;
   opacity: 1;
 }
-
 .tooltip-text1 {
   display: flex;
   align-items: center;
@@ -127,14 +114,13 @@ aside {
   font-size: 12.5px;
   font-weight: 100;
   position: absolute;
-  left: 43px;
+  left: -6px;
   top: 50%;
   transform: translateY(-50%);
   margin-left: -1px;
   opacity: 0;
   z-index: 9999;
 }
-
 .tooltip-text2 {
   display: flex;
   align-items: center;
@@ -157,13 +143,11 @@ aside {
   opacity: 0;
   z-index: 9999;
 }
-
 .tooltip3 {
   padding: 1px;
   position: relative;
   z-index: 9999;
 }
-
 .web-browser-container {
   writing-mode: initial;
   width: 210px;
@@ -179,7 +163,6 @@ aside {
   display: none;
   z-index: 1000;
 }
-
 .web-browser-container ul {
   display: flex;
   flex-direction: column;
@@ -190,7 +173,6 @@ aside {
   padding: 0;
   gap: 1px;
 }
-
 .web-browser-container li{
   display: flex;
   position: relative;
@@ -201,7 +183,6 @@ aside {
   width: 180px;
   border-radius: 15px;
 }
-
 .web-browser-container a{
   display: flex;
   position: relative;
@@ -210,21 +191,16 @@ aside {
   text-decoration: none;
   color: black;
 }
-
 .web-browser-container ul li {
   cursor: pointer;
   line-height: 1;
 }
-
 .web-browser-container ul li:hover {
   background-color: #efefed;
 }
-
 .tooltip3:hover .web-browser-container {
   display: block;
 }
-
-
 .tooltip-text,
 .tooltip-text1,
 .tooltip-text2 {
@@ -232,10 +208,436 @@ aside {
   opacity: 0;
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
-
 .tooltip:hover .tooltip-text,
 .tooltip1:hover .tooltip-text1,
 .tooltip2:hover .tooltip-text2 {
   visibility: visible;
   opacity: 1;
+}
+.notifications-container {
+  writing-mode: initial;
+  width: 390px;
+  height: 770px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 75px;
+  top: 75px;
+  transform: translateY(-50%);
+  display: none;
+  z-index: 1000;
+}
+.notifications-container ul {
+  display: flex;
+  align-items: start;
+  gap: 5px;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 5px 10px;
+}
+.notifications-container p{
+  font-size: 21px;
+  padding-bottom: 5px;
+  color: black;
+}
+.notifications-container li {
+  display: flex;
+  position: relative;
+  left: -5px;
+  flex-direction: column;
+  width: 370px;
+  height: 70px;
+  padding: 8px 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.update1 a, .update2 a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 350px;
+  padding: 0;
+  margin: 0;
+}
+.notifications-container .update2{
+  height: 90px;
+}
+.update1 p{
+  position: relative;
+  font-size: 16px;
+  font-weight: 300;
+  bottom: 4px;
+  right: 25px;
+  color: black;
+  text-align: justify;
+  width: 220px;
+  height: 44px;
+}
+.update2 p{
+  position: relative;
+  font-size: 16px;
+  font-weight: 300;
+  bottom: -5px;
+  right: 25px;
+  color: black;
+  text-align: justify;
+  width: 220px;
+  height: 44px;
+}
+.update1 img{
+  position: relative;
+  right: 33px;
+  bottom: 7px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+}
+.update2 img{
+  position: relative;
+  right: 33px;
+  bottom: 7px;
+  width: 55px;
+  height: 70px;
+  border-radius: 5px;
+}
+.more, .more2{
+  display: flex;
+  position: relative;
+  left: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+}
+.more p, .more2 p{
+  position: relative;
+  left: -3px;
+  top: 5px;
+  color: rgb(131, 130, 130);
+  font-size: 12px;
+  width: 20px;
+  height: 30px;
+}
+.more img{
+  position: relative;
+  bottom: 8px;
+  right: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 7px;
+}
+.more2 img{
+  position: relative;
+  bottom: 8px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 7px;
+}
+.notifications-container li:hover {
+  background-color: #e0e0ded5;
+}
+.notifications.active .notifications-container {
+  display: block;
+}
+.messages-container {
+  writing-mode: initial;
+  width: 390px;
+  height: 770px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 75px;
+  top: 0px;
+  transform: translateY(-50%);
+  display: none;
+  z-index: 1000;
+}
+.messages-container ul {
+  display: flex;
+  align-items: start;
+  gap: 5px;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0px 9px;
+  width: 380px;
+  gap: 10px;
+}
+.messages-container li{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 360px;
+  height: 60px;
+}
+.messages-container img{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  padding: 11px;
+  background-color: rgb(231, 231, 231);
+}
+.messages-container p{
+  width: 200px;
+  position: relative;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  color: black;
+  font-weight: 500;
+}
+.messages-container a{
+  display: flex;
+  align-items: center;
+  width: 340px;
+  text-decoration: none;
+}
+.messages-container ul li {
+  width: 500px;
+  padding: 10px;
+  cursor: pointer;
+}
+.top-messages{
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: auto;
+  justify-content: space-between
+}
+.top-messages img{
+  position: relative;
+  left: -5px;
+  bottom: 10px;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  background-color: transparent;
+  z-index: 9999;
+}
+.top-messages p{
+  color: black;
+  font-weight: 500;
+  width: 120px;
+  height: 28px;
+  font-size: 20px;
+  position: relative;
+  bottom: 8px;
+  right: 90px;
+}
+.write-icon img{
+  background-color: rgb(238, 23, 23);
+  width: 50px;
+  height: 50px;
+}
+.write-icon p{
+  position: relative;
+  right: 70px;
+  font-weight: 500;
+}
+.messages-container .top-messages{
+  width: 360px;
+  height: 60px;
+}
+.messages-container ul li:hover {
+  background-color: #efefed;
+}
+.messages-alerts.active .messages-container {
+  display: block;
+}
+.settings-menu {
+  position: absolute;
+  top: 345px;
+  left: 75px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  display: none;
+  flex-direction: column;
+  width: 410px;
+  height: 450px;
+  writing-mode: initial;
+}
+.settings-menu ul{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: auto;
+  text-align: left;
+  gap: 2px;
+  z-index: 9;
+}
+.settings-menu li{
+  height: 45px;
+  position: relative;
+  left: 25px;
+  bottom: 15px;
+  width: 390px;
+}
+.settings-menu a {
+  display: flex;
+  position: relative;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 5px;
+  text-align: left;
+  font-weight: 400;
+  align-items: center;
+      
+}
+.settings-menu li:hover{
+  background-color: #efefed;
+}
+    
+
+  @media (max-width: 430px){
+
+  .setting-icon{
+    position: absolute;
+    bottom: -90px;
+    left: 10px;
+  }
+
+  .settings-container{
+    position: relative;
+  }
+  .settings-menu {
+  position: absolute;
+  width: 250px;
+  height: 290px;
+  font-size: 12px;
+  }
+  .settings-menu ul{
+    gap: 0px;
+  }
+  .settings-menu li{
+    height: 30px;
+    width: 230px;
+    left: -55px;
+  }
+  .messages-container{
+    width: 250px;
+    height: 220px;
+    font-size: 12px;
+  }
+  .messages-container .write-icon ul{
+    width: 10px;
+  }
+  .messages-container img{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+  .top-messages p{
+    position: relative;
+    top: -px;
+    font-size: 15px;
+    width: 60px;
+    padding-left: 90px;
+  }
+  .messages-container .top-messages{
+  width: 230px;
+  }
+  .web-browser-container {
+    width: 120px;
+    height: 340px;
+    font-size: 10px;
+  }
+  .web-browser-container ul {
+    width: 100px;
+    height: auto;
+  }
+  .web-browser-container li{
+    left: 0px;
+    height: 25px;
+    width: 100px;
+  }
+
+  .notifications-container {
+    writing-mode: initial;
+    width: 240px;
+    height: 260px;
+  }
+  .notifications-container p{
+    font-size: 12px;
+  }
+  .notifications-container li {
+    width: 225px;
+    height: 40px;
+  }
+
+  .notifications-container .update2{
+    height: 40px;
+  }
+
+  .update1 p{
+    position: relative;
+    font-size: 10px;
+    font-weight: 300;
+    bottom: 4px;
+    right: 25px;
+    color: black;
+    text-align: justify;
+    width: 120px;
+    height: 44px;
+  }
+
+  .update2 p{
+    font-size: 10px;
+    width: 120px;
+    height: 44px;
+  }
+
+  .update1 img{
+    width: 24px;
+    height: 24px;
+  }
+
+  .update2 img{
+    width: 25px;
+    height: 30px;
+  }
+
+  .more, .more2{
+    position: relative;
+    bottom: 5px;
+    width: 15px;
+  }
+  .more p, .more2 p{
+    font-size: 10px;
+    width: 20px;
+    height: 15px;
+  }
+
+  .more img{
+    width: 15px;
+    height: 15px;
+  }
+
+  .more2 img{
+    width: 15px;
+    height: 15px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .setting-icon {
+  top: 820px;
+}
+
+.settings-menu {
+  top: 890px;
+}
 }

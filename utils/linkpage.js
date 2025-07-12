@@ -1,6 +1,9 @@
-export const linkPage = (id, page) => {
-    const link = document.querySelector(id);
-    link.addEventListener("click", () => page());
-  };
-
-  
+export const linkPage = (selector, viewFunction) => {
+  const element = document.querySelector(selector);
+  if (element) {
+    element.addEventListener("click", (e) => {
+      e.preventDefault();
+      viewFunction();
+    });
+  }
+};

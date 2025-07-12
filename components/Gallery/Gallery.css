@@ -4,7 +4,6 @@ main {
   margin: 15px 18px 0px 18px;
   width: calc(100% - 36px);
 }
-
 main img {
   width: 320px;
   height: auto;
@@ -13,26 +12,21 @@ main img {
   break-inside: avoid;
   border-radius: 15px;
 }
-
 #gallery{
     list-style: none;
 }
-
 #gallery li {
   position: relative;
   display: inline-block;
   overflow: hidden;
   border-radius: 15px;
 }
-
 #gallery li img {
   display: block;
   width: 100%;
   height: auto;
   transition: 0.3s ease;
 }
-
-
 .photo-wrapper {
   position: relative;
   display: inline-block;
@@ -40,15 +34,12 @@ main img {
   overflow: hidden;
   bottom: -1.5px;
 }
-
 .photo-wrapper img {
   display: block;
   width: 100%;
   transition: filter 0.3s ease;
   border-radius: 15px;
 }
-
-/* Overlay: aparece sobre la imagen */
 .overlay {
   position: absolute;
   top: 0;
@@ -64,28 +55,21 @@ main img {
   padding: 10px;
   transition: opacity 0.3s ease;
 }
-
-/* Botones dentro del overlay */
 .overlay button {
   margin: 5px;
   border: none;
   cursor: pointer;
   transition: background-color 0.2s;
 }
-
 .overlay:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
-
-/* Al pasar el mouse, mostrar overlay y oscurecer imagen */
 .photo-wrapper:hover .overlay {
   opacity: 1;
 }
-
 .photo-wrapper:hover img {
   filter: brightness(70%);
 }
-
 .save-btn{
     color: white;
     font-size: 16px;
@@ -94,7 +78,6 @@ main img {
     border-radius: 15px;
     background-color: rgb(226, 26, 26);
 }
-
 .more-btn{
     display: flex;
     justify-content: center;
@@ -108,8 +91,35 @@ main img {
     padding-bottom: 10px ;
     letter-spacing: 1px;
 }
-
 .save-btn:hover{
     background-color: rgba(226, 26, 26, 0.685);
+}
+
+
+@media (max-width: 430px){
+  .search-input {
+  width: 235px;
+  }
+  main {
+  column-count: 3;
+}
+  .overlay button{
+  position: relative;
+  left: 8px;
+  
+}
+  .save-btn{
+    font-size: 10px;
+    width: 30px;
+    height: auto;
+    padding-bottom: 1px ;
+}
+  .more-btn{
+    width: 20px;
+    height: 10px;
+    font-size: 12px;
+    font-weight: bolder;
+    padding-bottom: 6px ;
+}
 }
 

@@ -7,6 +7,8 @@ export const Homeview = () => `
   <div class="parent">
     ${Aside()}
     ${Navbar()}
-    ${Gallery()}
+    <div id="main-content">
+      ${Gallery()}
+    </div>
   </div>
 `;
